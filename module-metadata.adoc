@@ -1,0 +1,27 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`org.example.patientdomainservice.metadata`
+|Spring components
+|_Services_
+
+* `o.e.p.m.MatadataManagement`
+|===
+
+["plantuml"]
+@startuml
+title Metadata
+
+top to bottom direction
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Container_Boundary("PatientDomainServiceApplication.PatientDomainServiceApplication_boundary", "PatientDomainServiceApplication", $tags="") {
+Component(PatientDomainServiceApplication.PatientDomainServiceApplication.Metadata, "Metadata", "Module", "", $tags="")
+}
+
+
+SHOW_LEGEND(true)
+@enduml
