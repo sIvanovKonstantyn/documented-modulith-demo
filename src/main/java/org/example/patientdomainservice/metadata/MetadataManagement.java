@@ -2,10 +2,10 @@ package org.example.patientdomainservice.metadata;
 
 import java.util.Map;
 
-import org.example.patientdomainservice.ExtendedDocumentation;
 import org.example.patientdomainservice.metadata.repository.MetadataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.svosh.open.documenter.ExtendedDocumentation;
 
 @ExtendedDocumentation("""
     === Metadata Management

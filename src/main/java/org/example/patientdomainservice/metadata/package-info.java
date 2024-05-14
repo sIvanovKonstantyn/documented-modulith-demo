@@ -6,4 +6,4 @@
     """)
 package org.example.patientdomainservice.metadata;
 
-import org.example.patientdomainservice.ExtendedDocumentation;
+import org.svosh.open.documenter.ExtendedDocumentation;
