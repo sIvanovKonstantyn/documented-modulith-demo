@@ -23,3 +23,13 @@ _Example: 10_
 *app.metadata.max-size*
 
 '''
+
+
+
+_Enables Swagger page_
+
+_Example: false - enabled. true - disabled_
+
+*springdoc.use-management-port*
+
+'''

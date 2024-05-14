@@ -2,6 +2,8 @@
 
 === Reference documentation:
 
+xref:openapi.json#[Rest API]
+
 xref:components.puml#[Components]
 
 <<module-metadata.adoc#,Metadata Module>>

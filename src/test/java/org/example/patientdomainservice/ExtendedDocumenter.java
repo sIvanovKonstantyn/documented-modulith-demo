@@ -53,6 +53,7 @@ public class ExtendedDocumenter extends Documenter {
         try (Writer writer = new FileWriter(file.toFile())) {
             writer.write("== " + applicationName + "\n\n");
             writer.write("=== Reference documentation:\n\n");
+            writer.write("xref:openapi.json#[Rest API]\n\n");
             writer.write("xref:components.puml#[Components]\n\n");
             modules.forEach(
                 m -> {
@@ -160,8 +161,12 @@ public class ExtendedDocumenter extends Documenter {
     }
 
     private static String getDefaultOutputDirectory() {
-        return (new File("pom.xml").exists() ? "target" : "build").concat("/")
+        return getTargetFolder().concat("/")
             .concat(DEFAULT_LOCATION);
+    }
+
+    private static String getTargetFolder() {
+        return new File("pom.xml").exists() ? "target" : "build";
     }
 
     private Path recreateFile(String name) {
@@ -186,7 +191,8 @@ public class ExtendedDocumenter extends Documenter {
             Stream.of(
                 Paths.get(sourceDir, "configuration.adoc"),
                 Paths.get(sourceDir, "components.puml"),
-                Paths.get(sourceDir, "application.adoc")
+                Paths.get(sourceDir, "application.adoc"),
+                Paths.get(getTargetFolder(), "openapi.json")
             ),
             modules.stream()
                 .map(
