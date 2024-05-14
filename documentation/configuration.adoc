@@ -1,0 +1,25 @@
+_Defines how many calls per second patient arrival management may retrieve. Integer._
+
+_Example: 100_
+
+*app.arrival.ratelimit*
+
+'''
+
+_Defines which customers patient may use the service. List of values._
+
+_Example: customer1,customer2,customer3_
+
+*app.arrival.list-of-customers*
+
+'''
+
+
+
+_Defines the maximum size of metadata in megabytes. Integer._
+
+_Example: 10_
+
+*app.metadata.max-size*
+
+'''

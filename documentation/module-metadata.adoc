@@ -1,0 +1,31 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`org.example.patientdomainservice.metadata`
+|Spring components
+|_Services_
+
+* `o.e.p.m.MetadataManagement`
+|===
+== Metadata Module
+
+_Combines all the logic related to metadata_
+
+=== Metadata Management
+*Metadata Management* is responsible saving patient metadata and provides this data later
+for different system components. Has the next flows:
+
+- "Setup Metadata" flow
+
+==== "Setup Metadata" flow
+
+[plantuml]
+.Sequence diagram
+----
+-> MetadataManagement : setupMetadata(1)
+MetadataManagement -> MetadataDB : update(2)
+----
+
+(1) setupMetadata is called
+
+(2) MetadataManagement saves new metadata in MetadataDB

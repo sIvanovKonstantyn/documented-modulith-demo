@@ -1,0 +1,12 @@
+== Modulith application(demo)
+
+=== Reference documentation:
+
+<<components.puml#,Components>>
+
+<<module-metadata.adoc#,Metadata Module>>
+
+<<module-arrival.adoc#,Arrival Module>>
+
+<<configuration.adoc#,Configuration>>
+

@@ -1,0 +1,32 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`org.example.patientdomainservice.arrival`
+|Spring components
+|_Services_
+
+* `o.e.p.a.PatientArrivalManagement`
+|Bean references
+|* `o.e.p.m.MetadataManagement` (in Metadata)
+|===
+== Patient Arrival Module
+
+_Combines all the logic related to patient arrival_
+
+=== Patient Arrival Management
+*Patient Arrival Management* is responsible for the processes related to patient arrival. Has the next flows:
+
+- "Arrive Patient" flow
+
+==== "Arrive Patient" flow
+
+[plantuml]
+.Sequence diagram
+----
+Patient -> PAM : arrives(1)
+PAM -> MetadataManagement : setup metadata(2)
+----
+
+(1) Patient calls arrivePatient PAM flow (see: //link to open API description)
+
+(2) PAM calls setup metadata flow of MetadataManagement
