@@ -2,7 +2,7 @@
 
 === Reference documentation:
 
-<<components.puml#,Components>>
+xref:components.puml#[Components]
 
 <<module-metadata.adoc#,Metadata Module>>
 

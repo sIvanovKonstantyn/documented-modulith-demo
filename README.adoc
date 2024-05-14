@@ -1,0 +1,2 @@
+== Modulith demo project
+_Shows the approaches with autodocumented, well-structured application based on Spring Modulith_

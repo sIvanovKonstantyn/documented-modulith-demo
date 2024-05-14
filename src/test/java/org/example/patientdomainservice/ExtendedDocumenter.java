@@ -53,7 +53,7 @@ public class ExtendedDocumenter extends Documenter {
         try (Writer writer = new FileWriter(file.toFile())) {
             writer.write("== " + applicationName + "\n\n");
             writer.write("=== Reference documentation:\n\n");
-            writer.write("<<components.puml#,Components>>\n\n");
+            writer.write("xref:components.puml#[Components]\n\n");
             modules.forEach(
                 m -> {
                     try {
