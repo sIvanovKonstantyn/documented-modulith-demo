@@ -1,2 +1,16 @@
 == Modulith demo project
 _Shows the approaches with autodocumented, well-structured application based on Spring Modulith_
+
+=== Updates the documentation automatically:
+image::image-2024-05-14-12-09-34-586.png[]
+
+image::image-2024-05-14-12-10-14-938.png[]
+
+=== Describes components structure:
+image::image-2024-05-14-12-10-54-310.png[]
+
+=== Generates documentation for spring modules and classes:
+image::image-2024-05-14-12-11-49-181.png[]
+
+=== Describes configuration:
+image::image-2024-05-14-12-16-02-175.png[]
