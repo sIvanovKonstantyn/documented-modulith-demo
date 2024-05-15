@@ -4,7 +4,7 @@ _Shows the approaches with autodocumented, well-structured application based on 
 === Updates the documentation automatically:
 image::image-2024-05-14-12-09-34-586.png[]
 
-image::image-2024-05-14-12-10-14-938.png[]
+image::image-2024-05-15-07-51-46-341.png[]
 
 === Describes components structure:
 image::image-2024-05-14-12-10-54-310.png[]
